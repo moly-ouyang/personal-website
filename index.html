@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Academic Portfolio</title>
+    <title>Ouyang Minglong | Academic Homepage</title>
+    <meta
+      name="description"
+      content="Personal academic homepage of Ouyang Minglong, a Master's student majoring in Management and minoring in Financial Media at Peking University HSBC Business School."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,31 +40,101 @@
       </nav>
     </header>
 
+    <div
+      class="page-world"
+      data-world-scene
+      data-background-src="images/background/forest-pixel-bg.png"
+      aria-hidden="true"
+    >
+      <div class="hero-scene__backdrop">
+        <div class="hero-scene__image"></div>
+        <div class="hero-scene__stars"></div>
+        <div class="hero-scene__sky"></div>
+        <div class="hero-scene__haze"></div>
+        <div class="hero-scene__sun"></div>
+        <div class="hero-scene__clouds"></div>
+        <div class="hero-scene__canopy hero-scene__canopy--back"></div>
+        <div class="hero-scene__mountains hero-scene__mountains--back"></div>
+        <div class="hero-scene__mountains hero-scene__mountains--mid"></div>
+        <div class="hero-scene__trunks hero-scene__trunks--far"></div>
+        <div class="hero-scene__woods hero-scene__woods--far"></div>
+        <div class="hero-scene__water"></div>
+        <div class="hero-scene__cabin"></div>
+        <div class="hero-scene__path"></div>
+        <div class="hero-scene__trunks hero-scene__trunks--near"></div>
+        <div class="hero-scene__woods hero-scene__woods--near"></div>
+        <div class="hero-scene__flowers"></div>
+        <div class="hero-scene__ground"></div>
+        <div class="hero-scene__foreground"></div>
+        <div class="hero-scene__mist hero-scene__mist--high"></div>
+        <div class="hero-scene__mist hero-scene__mist--low"></div>
+      </div>
+
+      <div class="hero-scene__effects">
+        <img
+          class="hero-scene__effect hero-scene__effect--butterfly hero-scene__effect--1"
+          src="images/effects/butterfly-white.png"
+          alt=""
+        />
+        <img
+          class="hero-scene__effect hero-scene__effect--butterfly hero-scene__effect--2"
+          src="images/effects/butterfly-white.png"
+          alt=""
+        />
+        <img
+          class="hero-scene__effect hero-scene__effect--snow hero-scene__effect--3"
+          src="images/effects/particle-snow.png"
+          alt=""
+        />
+        <img
+          class="hero-scene__effect hero-scene__effect--snow hero-scene__effect--4"
+          src="images/effects/particle-snow.png"
+          alt=""
+        />
+        <img
+          class="hero-scene__effect hero-scene__effect--snow hero-scene__effect--5"
+          src="images/effects/particle-snow.png"
+          alt=""
+        />
+      </div>
+
+    </div>
+
+    <div class="page-mascot-layer" data-mascot-layer aria-hidden="true">
+      <div class="hero-scene__mascot" data-mascot data-moving="false">
+        <span class="hero-scene__mascot-aura"></span>
+        <span class="hero-scene__mascot-shadow"></span>
+        <div class="hero-scene__sprite-frame">
+          <img src="images/mascot/mascot-idle.png" alt="" />
+        </div>
+      </div>
+    </div>
+
     <main>
-      <section class="hero section" id="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Academic Portfolio</p>
-            <h1>Ouyang Minglong</h1>
-            <p class="subtitle">Master's student in Management exploring culture, media, and digital life.</p>
-            <p class="intro">
-              I am interested in how popular culture, digital media, and games shape contemporary experience. This site
-              introduces my academic background, current interests, and a few personal snapshots beyond research.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#research">View Research</a>
-              <a class="button button-secondary" href="#contact">Get in Touch</a>
-            </div>
-          </div>
-          <div class="hero-visual reveal">
-            <div class="hero-card floating-card">
-              <p class="card-label">Current Focus</p>
-              <h2>Culture, Media, and Play</h2>
-              <p>Examining how digital platforms and popular media influence meaning-making, participation, and everyday life.</p>
-            </div>
-            <div class="hero-stat floating-card">
-              <span>3</span>
-              <p>core research interests</p>
+      <section class="hero" id="hero">
+        <div class="hero-scene" data-hero-scene aria-label="Dreamy academic landing scene">
+          <div class="container hero-layout">
+            <div class="hero-panel reveal">
+              <p class="eyebrow">Academic Homepage</p>
+              <h1>Ouyang Minglong</h1>
+              <p class="subtitle">
+                Master&apos;s student majoring in Management and minoring in Financial Media at Peking University HSBC
+                Business School.
+              </p>
+              <p class="intro">
+                I study popular culture, digital media, platform cultures, and AI-mediated interaction in contemporary
+                China, with particular attention to how subcultures, games, and interactive media organize taste,
+                belonging, and mediated presence.
+              </p>
+              <div class="hero-details" aria-label="Academic profile highlights">
+                <span>Popular culture and digital media</span>
+                <span>Platform cultures and subcultural taste</span>
+                <span>Games, AI, and contemporary China</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#research">View Research</a>
+                <a class="button button-secondary" href="#contact">Contact</a>
+              </div>
             </div>
           </div>
         </div>
@@ -64,41 +144,66 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">About</p>
-            <h2>A short introduction</h2>
+            <h2>Interdisciplinary media and cultural research</h2>
           </div>
+
           <div class="about-grid">
             <div class="about-photo-card reveal">
               <img
                 src="profile-photo.jpg"
                 alt="Portrait of Ouyang Minglong"
-                onerror="this.onerror=null;this.src=`data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 760'><defs><linearGradient id='p' x1='0' x2='1'><stop offset='0%25' stop-color='%23f3ede4'/><stop offset='100%25' stop-color='%23ded7cb'/></linearGradient></defs><rect width='600' height='760' rx='36' fill='url(%23p)'/><rect x='72' y='84' width='456' height='592' rx='28' fill='%23fbfaf7'/><circle cx='300' cy='282' r='110' fill='%23d7c7b2'/><path d='M168 592c28-108 102-170 132-170s104 62 132 170' fill='%23c5b29a'/><text x='300' y='706' text-anchor='middle' font-family='Arial' font-size='28' fill='%23655442'>Add profile-photo.jpg here</text></svg>`"
+                onerror="this.onerror=null;this.src=`data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 760'><defs><linearGradient id='p' x1='0' x2='1'><stop offset='0%25' stop-color='%23f5eff8'/><stop offset='100%25' stop-color='%23ead7e2'/></linearGradient></defs><rect width='600' height='760' rx='40' fill='url(%23p)'/><rect x='72' y='84' width='456' height='592' rx='30' fill='%23fffdfd'/><circle cx='300' cy='280' r='108' fill='%23d9c6cf'/><path d='M166 596c26-108 102-170 134-170s108 62 134 170' fill='%23b6b9d2'/><text x='300' y='706' text-anchor='middle' font-family='Arial' font-size='28' fill='%23645d70'>Add profile-photo.jpg here</text></svg>`"
               />
             </div>
+
             <div class="about-content reveal">
               <p class="lead">
-                I am a Master's student in Management at PKU HSBC Business School with interdisciplinary interests in
-                cultural analysis, digital media, and game studies.
+                I am a Master&apos;s student majoring in Management and minoring in Financial Media at Peking University
+                HSBC Business School. My work brings together questions from media studies, cultural sociology, and
+                digital platform research.
               </p>
+
               <div class="info-panel">
                 <h3>Short Bio</h3>
                 <p>
-                  My work is broadly concerned with how media and cultural forms circulate, how audiences engage with
-                  digital environments, and how games can be studied as meaningful social and cultural objects. I am
-                  especially interested in combining management perspectives with interpretive approaches to contemporary media.
+                  I am interested in how popular culture becomes socially meaningful once it circulates through
+                  platforms, fan communities, and mediated markets. Across topics such as games, online fandoms,
+                  interactive media, and platformed cultural consumption, I ask how identities are formed through taste,
+                  attachment, and participation.
+                </p>
+                <p>
+                  A related strand of my research explores AI-mediated interaction: how conversational systems,
+                  recommendation environments, and generative tools reshape expectations of presence, agency, and
+                  intimacy in everyday digital life. Much of this curiosity is grounded in the study of contemporary
+                  China, where questions of aspiration, governance, and mediated sociality often become especially vivid.
                 </p>
               </div>
+
               <div class="info-panel">
                 <h3>Education</h3>
-                <p>Master's student in Management</p>
-                <p>PKU HSBC Business School</p>
+                <p>Master&apos;s student majoring in Management and minoring in Financial Media</p>
+                <p>Peking University HSBC Business School</p>
               </div>
+
+              <div class="info-panel">
+                <h3>Research Approach</h3>
+                <p>
+                  I am most interested in work that connects close cultural interpretation with questions of
+                  infrastructure, circulation, and social meaning. This means reading media objects carefully while also
+                  paying attention to the platform logics and communities that organize them.
+                </p>
+              </div>
+
               <div class="info-panel">
                 <h3>Research Interests</h3>
                 <div class="tag-row">
                   <span>Popular Culture</span>
                   <span>Digital Media</span>
-                  <span>Game Studies</span>
                   <span>Platform Cultures</span>
+                  <span>Subculture and Taste</span>
+                  <span>Games and Interactive Media</span>
+                  <span>AI-mediated Interaction</span>
+                  <span>Contemporary China</span>
                 </div>
               </div>
             </div>
@@ -110,45 +215,57 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Research</p>
-            <h2>Selected projects</h2>
+            <h2>Current research themes</h2>
+            <p class="section-note">
+              My current interests are connected by a shared concern with how media environments shape visibility,
+              belonging, interpretation, and everyday forms of social interaction.
+            </p>
           </div>
+
           <div class="card-grid research-grid">
             <article class="content-card reveal">
-              <p class="card-meta">Project 01</p>
-              <h3>Popular Culture and Digital Consumption</h3>
+              <p class="card-meta">Theme 01</p>
+              <h3>Platform Cultures and Visibility</h3>
               <p>
-                A project exploring how popular culture circulates across digital platforms and how users participate in
-                contemporary forms of cultural consumption.
+                I study how recommendation systems, interface conventions, and platform metrics shape what becomes
+                visible, shareable, and culturally valuable in contemporary digital environments.
               </p>
-              <a href="#contact">Read more</a>
             </article>
+
             <article class="content-card reveal">
-              <p class="card-meta">Project 02</p>
-              <h3>Platformed Media Practices</h3>
+              <p class="card-meta">Theme 02</p>
+              <h3>Subculture, Taste, and Distinction</h3>
               <p>
-                A study of how platform design, visibility, and recommendation systems shape the production and reception
-                of digital media content.
+                I am interested in how communities produce belonging through aesthetic judgment, niche references, and
+                hierarchies of taste, especially where fandom, lifestyle, and consumption overlap.
               </p>
-              <a href="#contact">Read more</a>
             </article>
+
             <article class="content-card reveal">
-              <p class="card-meta">Project 03</p>
-              <h3>Games as Cultural Texts</h3>
+              <p class="card-meta">Theme 03</p>
+              <h3>Games and Interactive Media</h3>
               <p>
-                A project considering games not only as entertainment products, but also as sites of narrative,
-                identity, community, and cultural meaning.
+                Games and adjacent media matter to me as sites where narrative, systems, play, and affect come
+                together. I approach them as cultural forms that structure experience as much as representation.
               </p>
-              <a href="#contact">Read more</a>
             </article>
+
             <article class="content-card reveal">
-              <p class="card-meta">Project 04</p>
-              <h3>Audience Experience in Interactive Media</h3>
+              <p class="card-meta">Theme 04</p>
+              <h3>AI-mediated Interaction</h3>
               <p>
-                An emerging research direction focused on how users interpret participation, immersion, and affect across
-                different forms of interactive media.
+                I am also exploring how chatbots, generative systems, and other AI interfaces enter everyday life as
+                social presences, reshaping norms of communication, authorship, and attachment.
               </p>
-              <a href="#contact">Read more</a>
             </article>
+          </div>
+
+          <div class="research-note reveal">
+            <p class="card-meta">Context</p>
+            <p>
+              Across these themes, I am especially interested in contemporary China as a setting where platform
+              governance, mediated aspiration, and popular-cultural experimentation meet in highly visible ways.
+            </p>
           </div>
         </div>
       </section>
@@ -157,24 +274,40 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Hobbies</p>
-            <h2>What I enjoy outside research</h2>
+            <h2>Interests beyond formal research</h2>
           </div>
-          <div class="card-grid">
+
+          <div class="card-grid hobbies-grid">
             <article class="content-card hobby-card reveal">
-              <h3>Film and Series</h3>
-              <p>Following visual storytelling and screen culture as both a personal interest and an extension of media analysis.</p>
+              <h3>Film and Streaming Culture</h3>
+              <p>
+                I enjoy watching film and serialized media partly for pleasure, and partly because they keep my
+                interpretive curiosity alive.
+              </p>
             </article>
+
             <article class="content-card hobby-card reveal">
               <h3>Reading</h3>
-              <p>Reading across cultural theory, media studies, and contemporary writing that opens new interpretive questions.</p>
+              <p>
+                My reading moves between cultural theory, media scholarship, and contemporary writing that sharpens how
+                I think about attention, style, and social life.
+              </p>
             </article>
+
             <article class="content-card hobby-card reveal">
               <h3>Games</h3>
-              <p>Engaging with games as lived experience, cultural form, and a space where narrative and systems meet.</p>
+              <p>
+                Playing games remains both a personal interest and a way of staying close to interactive media as lived
+                experience rather than abstract object.
+              </p>
             </article>
+
             <article class="content-card hobby-card reveal">
-              <h3>Photography</h3>
-              <p>Recording everyday moments, campus scenes, and travel details with a quiet and observational style.</p>
+              <h3>Photography and Walking</h3>
+              <p>
+                I like collecting quiet visual details from campus life, travel, and everyday movement, often through a
+                small and observational photographic practice.
+              </p>
             </article>
           </div>
         </div>
@@ -184,52 +317,21 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Gallery</p>
-            <h2>Snapshots and visual notes</h2>
+            <h2>Field notes and photo journal</h2>
+            <p class="section-note">
+              Selected images from campus life, travel, and research routines. I keep them here as a visual record of
+              atmosphere, place, and the slower textures that often sit beside academic work.
+            </p>
           </div>
+
           <div class="filter-bar reveal" role="toolbar" aria-label="Gallery filters">
             <button class="filter-button active" data-filter="all">All</button>
             <button class="filter-button" data-filter="campus">Campus</button>
             <button class="filter-button" data-filter="travel">Travel</button>
-            <button class="filter-button" data-filter="work">Research</button>
+            <button class="filter-button" data-filter="research">Research</button>
           </div>
-          <div class="gallery-grid">
-            <figure class="gallery-item reveal" data-category="campus">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g1' x1='0' x2='1'><stop offset='0%' stop-color='%23e8efe2'/><stop offset='100%' stop-color='%23c7d9c3'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g1)'/><circle cx='150' cy='120' r='48' fill='%23f4f0d7'/><rect x='120' y='220' width='560' height='210' rx='20' fill='%2396af93'/><rect x='170' y='170' width='150' height='200' rx='20' fill='%23f8f6ef'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%2341543f'>Campus Placeholder</text></svg>"
-                alt="Campus placeholder"
-              />
-            </figure>
-            <figure class="gallery-item reveal" data-category="travel">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g2' x1='0' x2='1'><stop offset='0%' stop-color='%23f4e8de'/><stop offset='100%' stop-color='%23dfc2ad'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g2)'/><path d='M0 390 Q200 250 400 380 T800 360 V560 H0 Z' fill='%23bf9a80'/><circle cx='620' cy='150' r='58' fill='%23fff2de'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%235b4638'>Travel Placeholder</text></svg>"
-                alt="Travel placeholder"
-              />
-            </figure>
-            <figure class="gallery-item reveal" data-category="work">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g3' x1='0' x2='1'><stop offset='0%' stop-color='%23eef0f6'/><stop offset='100%' stop-color='%23d6dceb'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g3)'/><rect x='120' y='110' width='560' height='340' rx='28' fill='%23ffffff'/><rect x='180' y='180' width='200' height='18' rx='9' fill='%2397a8c8'/><rect x='180' y='230' width='320' height='18' rx='9' fill='%23b4bfd8'/><rect x='180' y='280' width='250' height='18' rx='9' fill='%23c7d1e5'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%23485571'>Research Placeholder</text></svg>"
-                alt="Research placeholder"
-              />
-            </figure>
-            <figure class="gallery-item reveal" data-category="campus">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g4' x1='0' x2='1'><stop offset='0%' stop-color='%23e6ecec'/><stop offset='100%' stop-color='%23c0d1cf'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g4)'/><rect x='140' y='180' width='520' height='220' rx='30' fill='%23809c98'/><rect x='220' y='140' width='360' height='120' rx='24' fill='%23f7f6f1'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%233e5450'>Campus Life</text></svg>"
-                alt="Campus life placeholder"
-              />
-            </figure>
-            <figure class="gallery-item reveal" data-category="travel">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g5' x1='0' x2='1'><stop offset='0%' stop-color='%23f4efe8'/><stop offset='100%' stop-color='%23d6c6b8'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g5)'/><path d='M100 390 L250 200 L420 360 L560 170 L700 390 Z' fill='%239c8c79'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%2352463a'>Travel Notes</text></svg>"
-                alt="Travel notes placeholder"
-              />
-            </figure>
-            <figure class="gallery-item reveal" data-category="work">
-              <img
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 560'><defs><linearGradient id='g6' x1='0' x2='1'><stop offset='0%' stop-color='%23f0ece8'/><stop offset='100%' stop-color='%23ddd2c5'/></linearGradient></defs><rect width='800' height='560' rx='32' fill='url(%23g6)'/><rect x='160' y='120' width='480' height='320' rx='24' fill='%23fffdfa'/><rect x='220' y='190' width='120' height='140' rx='16' fill='%23d3b99d'/><rect x='370' y='190' width='180' height='16' rx='8' fill='%239b8266'/><rect x='370' y='230' width='150' height='16' rx='8' fill='%23b49a80'/><rect x='370' y='270' width='110' height='16' rx='8' fill='%23ccb79f'/><text x='400' y='500' text-anchor='middle' font-family='Arial' font-size='34' fill='%2352473c'>Project Board</text></svg>"
-                alt="Project board placeholder"
-              />
-            </figure>
-          </div>
+
+          <div class="gallery-grid" id="gallery-grid"></div>
         </div>
       </section>
 
@@ -237,24 +339,25 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Contact</p>
-            <h2>Let’s connect</h2>
+            <h2>Get in touch</h2>
           </div>
+
           <div class="contact-panel reveal">
-            <div>
+            <div class="contact-block">
               <p class="contact-label">Email</p>
               <a class="contact-link" href="mailto:minglongouyang@gmail.com">minglongouyang@gmail.com</a>
             </div>
-            <div>
-              <p class="contact-label">CV</p>
-              <a class="button button-primary" href="#">Download CV</a>
+
+            <div class="contact-block">
+              <p class="contact-label">Affiliation</p>
+              <p>Peking University HSBC Business School</p>
+              <p>Master&apos;s student majoring in Management and minoring in Financial Media</p>
             </div>
-            <div>
-              <p class="contact-label">Social</p>
-              <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">Google Scholar</a>
-                <a href="#">Email</a>
-              </div>
+
+            <div class="contact-block">
+              <p class="contact-label">Academic Materials</p>
+              <p>CV and other research materials are available upon request by email.</p>
+              <a class="button button-primary" href="mailto:minglongouyang@gmail.com">Request by Email</a>
             </div>
           </div>
         </div>
